@@ -1,5 +1,7 @@
 package lesson_03_04_2018;
 
+import java.util.List;
+
 public class Example4 {
 
     private static volatile int value = 0;
@@ -24,7 +26,18 @@ public class Example4 {
         dec.join();
 
         System.out.println(value);
+    }
 
+
+    // T1
+    // T2
+    private static void doSmthWithList(List<String> list) {
+        synchronized (list) {
+            if (!list.isEmpty()) { // <- T1
+                String string = list.get(0);
+                System.out.println(string);
+            }
+        }
     }
 
     // ++value
