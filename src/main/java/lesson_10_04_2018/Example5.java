@@ -2,7 +2,6 @@ package lesson_10_04_2018;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
-import java.util.concurrent.locks.StampedLock;
 
 public class Example5 {
 
