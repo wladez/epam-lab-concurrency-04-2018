@@ -4,7 +4,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-public class Main {
+public class Launcher {
     public static void main(String[] args) {
         BlockingStack<Integer> stack = new BlockingStack<>(5);
         ExecutorService service = Executors.newFixedThreadPool(15);
